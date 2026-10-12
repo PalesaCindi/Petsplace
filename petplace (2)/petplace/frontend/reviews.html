@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rating & Reviews — PetPlace</title>
+  <meta name="description" content="PetPlace — where every pet feels at home.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="reviews">
+  <header id="site-header"></header>
+  <main class="page">
+    <section class="card">
+      <h1 class="center">Rating &amp; Reviews</h1>
+      <form id="review-form" novalidate>
+        <div class="rating-row"><span class="name">Dogs</span><span class="stars" data-key="dogs" role="group" aria-label="Rate the dogs"></span></div>
+        <div class="rating-row"><span class="name">Product</span><span class="stars" data-key="product" role="group" aria-label="Rate the products"></span></div>
+        <div class="rating-row"><span class="name">Page</span><span class="stars" data-key="page" role="group" aria-label="Rate this page"></span></div>
+        <div class="field">
+          <label class="sr-only" for="comment">Your review</label>
+          <textarea id="comment" name="comment" maxlength="1000" placeholder="Share your reviews about the dogs and product"></textarea>
+        </div>
+        <button class="btn btn-block" type="submit">Submit</button>
+        <p class="form-message" id="form-message" role="alert"></p>
+      </form>
+      <ul class="review-list" id="review-list" aria-live="polite"></ul>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/catalog-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

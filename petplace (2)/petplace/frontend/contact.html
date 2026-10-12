@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — PetPlace</title>
+  <meta name="description" content="PetPlace — where every pet feels at home.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+  <main class="photo-page">
+    <img class="bg" src="images/contact-bg.jpg" alt="" onerror="this.remove()">
+    <section class="form-card contact-card">
+      <aside class="contact-side">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><span aria-hidden="true">&#128222;</span><a href="tel:0761123677">0761123677</a></li>
+          <li><span aria-hidden="true">&#9993;</span><a href="mailto:eileen@petsplace.co.za">eileen@petsplace.co.za</a></li>
+          <li><span aria-hidden="true">&#128172;</span><a href="https://wa.me/27761123677">0761123677 (WhatsApp)</a></li>
+          <li><span aria-hidden="true">&#128062;</span>PetsPlace</li>
+        </ul>
+      </aside>
+      <div class="contact-main">
+        <h1>Get in Touch</h1>
+        <p>Feel free to drop us a line below.</p>
+        <form id="contact-form" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" maxlength="2000" placeholder="Type your message here" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/catalog-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

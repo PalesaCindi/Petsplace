@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create an Account — PetPlace</title>
+  <meta name="description" content="PetPlace — where every pet feels at home.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="signup">
+  <main class="auth">
+    <img class="bg" src="images/image.png" alt="" onerror="this.remove()">
+    <div class="auth-box">
+      <h1>Create an Account</h1>
+      <form id="auth-form" novalidate>
+        <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required></div>
+        <button class="btn btn-center" type="submit">Register</button>
+        <p class="form-message" id="form-message" role="alert"></p>
+      </form>
+      <div class="divider">or continue with</div>
+      <div class="social">
+        <button class="btn" type="button" data-social="Google">Google</button>
+        <button class="btn" type="button" data-social="Apple">&#63743; Apple</button>
+      </div>
+      <p class="auth-foot">Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
